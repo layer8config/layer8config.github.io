@@ -10,36 +10,39 @@
       background-color: #0f1117;
       color: #f4f4f4;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       text-align: center;
-      padding: 2rem;
+    }
+    .banner {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
     }
     header {
-      max-width: 900px;
-      margin-bottom: 2rem;
+      padding: 2rem;
     }
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.7rem;
       color: #63b3ed;
+      margin-bottom: 0.5rem;
     }
     p {
       font-size: 1.2rem;
-      line-height: 1.6;
       color: #cbd5e0;
+      margin: 0 auto 2rem;
+      max-width: 600px;
     }
     .buttons {
-      margin-top: 2rem;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
     }
     .buttons a {
       background-color: #2d3748;
-      padding: 1rem 2rem;
-      border-radius: 8px;
       color: #63b3ed;
+      padding: 0.8rem 1.6rem;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
       transition: background-color 0.2s;
@@ -47,35 +50,53 @@
     .buttons a:hover {
       background-color: #4a5568;
     }
+    .portfolio {
+      margin-top: 2rem;
+    }
+    .portfolio img {
+      width: 120px;
+      margin-bottom: 1rem;
+    }
+    .portfolio p {
+      font-style: italic;
+      color: #a0aec0;
+      font-size: 1.1rem;
+    }
     footer {
       margin-top: 4rem;
       font-size: 0.9rem;
       color: #718096;
-    }
-    @media (min-width: 600px) {
-      .buttons {
-        flex-direction: row;
-      }
+      padding-bottom: 2rem;
     }
   </style>
 </head>
 <body>
+
+  <!-- Banner Image -->
+  <img src="banner.jpg" alt="Layer 8 Config Banner" class="banner" />
+
+  <!-- Header / Hero -->
   <header>
     <h1>Layer 8 Config</h1>
-    <p>
-      A place where the network ends and human error begins.  
-      Explore tech-savvy merch, automation tools, and no-nonsense resources for network engineers, sysadmins, and security folks.
-    </p>
+    <p>A place where the network ends and human error begins.<br>
+    Explore tech-savvy merch for network engineers, sysadmins, and cybersecurity nerds.</p>
 
     <div class="buttons">
       <a href="https://www.redbubble.com/people/layer8config/shop" target="_blank">🛍️ Shop Merch</a>
-      <a href="https://layer8config.gumroad.com" target="_blank">📦 Browse Scripts</a>
     </div>
   </header>
 
+  <!-- Portfolio Mouse Section -->
+  <div class="portfolio">
+    <img src="portfolio.jpg" alt="Typing mouse mascot" />
+    <p>"Welcome to the human layer of networking."</p>
+  </div>
+
+  <!-- Footer -->
   <footer>
     &copy; 2025 Layer 8 Config. No refunds on misconfigured humans.
   </footer>
+
 </body>
 </html>
 
