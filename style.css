@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.header {
+  padding: 2rem;
+}
+.logo {
+  max-width: 100px;
+}
+.btn {
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.about {
+  padding: 2rem;
+}
+footer {
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #999;
+}
