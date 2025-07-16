@@ -7,96 +7,77 @@
   <style>
     body {
       margin: 0;
-      background-color: #0f1117;
-      color: #f4f4f4;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #ffffff;
       text-align: center;
     }
+
+    .banner-section {
+      background-color: #000000;
+    }
+
     .banner {
       width: 100%;
       max-height: 300px;
       object-fit: cover;
     }
+
     header {
-      padding: 2rem;
+      padding: 2rem 1rem;
     }
+
     h1 {
       font-size: 2.7rem;
       color: #63b3ed;
       margin-bottom: 0.5rem;
     }
-    p {
+
+    p.description {
       font-size: 1.2rem;
       color: #cbd5e0;
       margin: 0 auto 2rem;
       max-width: 600px;
     }
+
     .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-bottom: 2rem;
+      margin-top: 1rem;
     }
+
     .buttons a {
+      display: inline-block;
       background-color: #2d3748;
       color: #63b3ed;
       padding: 0.8rem 1.6rem;
+      margin: 0.5rem;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      transition: background-color 0.2s;
+      transition: background-color 0.2s ease;
     }
+
     .buttons a:hover {
       background-color: #4a5568;
     }
+
     .portfolio {
       margin-top: 2rem;
     }
+
     .portfolio img {
-      width: 120px;
-      margin-bottom: 1rem;
+      width: 140px;
+      max-width: 100%;
     }
-    .portfolio p {
+
+    .quote {
+      margin-top: 1rem;
       font-style: italic;
       color: #a0aec0;
       font-size: 1.1rem;
     }
+
     footer {
-      margin-top: 4rem;
+      margin-top: 3rem;
       font-size: 0.9rem;
       color: #718096;
-      padding-bottom: 2rem;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Banner Image -->
-  <img src="banner.jpg" alt="Layer 8 Config Banner" class="banner" />
-
-  <!-- Header / Hero -->
-  <header>
-    <h1>Layer 8 Config</h1>
-    <p>A place where the network ends and human error begins.<br>
-    Explore tech-savvy merch for network engineers, sysadmins, and cybersecurity nerds.</p>
-
-    <div class="buttons">
-      <a href="https://www.redbubble.com/people/layer8config/shop" target="_blank">🛍️ Shop Merch</a>
-    </div>
-  </header>
-
-  <!-- Portfolio Mouse Section -->
-  <div class="portfolio">
-    <img src="portfolio.jpg" alt="Typing mouse mascot" />
-    <p>"Welcome to the human layer of networking."</p>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 Layer 8 Config. No refunds on misconfigured humans.
-  </footer>
-
-</body>
-</html>
 
