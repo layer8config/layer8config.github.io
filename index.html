@@ -21,6 +21,7 @@
       width: 100%;
       max-height: 300px;
       object-fit: cover;
+      display: block;
     }
 
     header {
@@ -28,20 +29,15 @@
     }
 
     h1 {
-      font-size: 2.7rem;
+      font-size: 2.5rem;
       color: #63b3ed;
-      margin-bottom: 0.5rem;
     }
 
-    p.description {
+    .description {
       font-size: 1.2rem;
       color: #cbd5e0;
-      margin: 0 auto 2rem;
       max-width: 600px;
-    }
-
-    .buttons {
-      margin-top: 1rem;
+      margin: 0 auto 2rem;
     }
 
     .buttons a {
@@ -49,7 +45,7 @@
       background-color: #2d3748;
       color: #63b3ed;
       padding: 0.8rem 1.6rem;
-      margin: 0.5rem;
+      margin-top: 1rem;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
@@ -62,11 +58,13 @@
 
     .portfolio {
       margin-top: 2rem;
+      animation: float 3s ease-in-out infinite;
     }
 
     .portfolio img {
       width: 140px;
       max-width: 100%;
+      filter: drop-shadow(0 0 10px rgba(99,179,237,0.2));
     }
 
     .quote {
@@ -76,8 +74,69 @@
       font-size: 1.1rem;
     }
 
+    .typing {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid #63b3ed;
+      width: 0;
+      animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
     footer {
       margin-top: 3rem;
       font-size: 0.9rem;
       color: #718096;
+      padding: 2rem 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner -->
+  <div class="banner-section">
+    <img src="banner.png" alt="Layer 8 Banner" class="banner" />
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h1>Layer 8 Config</h1>
+    <p class="description">
+      A place where the network ends and human error begins.<br>
+      Explore tech-savvy merch for network engineers, sysadmins, and security folks.
+    </p>
+
+    <div class="buttons">
+      <a href="https://www.redbubble.com/people/layer8config/shop" target="_blank">🛍️ Shop Merch</a>
+    </div>
+  </header>
+
+  <!-- Portfolio Typing Section -->
+  <div class="portfolio">
+    <img src="portfolio.png" alt="Typing Mouse" />
+    <p class="quote"><span class="typing">"Welcome to the human layer of networking."</span></p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Layer 8 Config. No refunds on misconfigured humans.
+  </footer>
+
+</body>
+</html>
 
